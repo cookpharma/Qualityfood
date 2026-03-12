@@ -3,10 +3,13 @@
     "type": "module",
     "version": "0.1.0",
     "private": true,
+    "homepage": "https://cookpharma.github.io/Qualityfood",
     "scripts": {
         "dev": "vite",
         "build": "vite build",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "dependencies": {
         "framer-motion": "^10.12.16",
@@ -18,11 +21,12 @@
     "devDependencies": {
         "@types/react": "^18.2.21",
         "@types/react-dom": "^18.2.7",
+        "@vitejs/plugin-react": "^5.1.0",
         "autoprefixer": "^10.4.14",
+        "gh-pages": "^6.3.0",
         "postcss": "^8.4.24",
         "tailwindcss": "^3.4.19",
         "typescript": "^5.2.2",
-        "vite": "^5.2.1",
-        "@vitejs/plugin-react": "^5.1.0"
+        "vite": "^5.2.1"
     }
 }
